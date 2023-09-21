@@ -2,26 +2,26 @@
 #include <stdio.h>
 
 /**
- * rot13 - encoder rot13
- * @s: pointer to string params
+ * rot13 - main function, encoder rot13
+ * @s: pointer to string parameter
  *
- * Return: *s
+ * Return: *s, string function
  */
 
 char *rot13(char *s)
 {
-	int i;
 	int j;
+	int k;
 	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		for (j = 0; j < 52; j++)
+		for (k = 0; k < 52; k++)
 		{
-			if (s[i] == data1[j])
+			if (s[j] == data1[k])
 			{
-				s[i] = datarot[j];
+				s[j] = datarot[k];
 				break;
 			}
 		}
