@@ -1,26 +1,23 @@
 #include "main.h"
 
 /**
- * _memcpy() - function name
- *
- * @src: source, parameter1
- *
- * @dest: destination, parameer2
- *
- * @n: function parameter
- *
- * return: dest
- *
- */
-
+  * _memcpy - main function of the prototype
+  *
+  * @src: Source parameter 1
+  *
+  * @dest: Destination parameter 2
+  *
+  * @n: Function parameter 3
+  *
+  * Return: dest
+  */
 char *_memcpy(char *dest, char *src, unsigned int n)
-
 {
-        unsigned int i;
+	unsigned int l;
 
-        for (i = 0; i < n; i++)
-        {
-        dest[i] = src[i];
-        }
-        return (dest);
+	for (l = 0; l < n; l++)
+	{
+	dest[l] = src[l];
+	}
+	return (dest);
 }
