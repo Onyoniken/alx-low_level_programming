@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _memcpy() - function prototype
+ * _memcpy() - function name
  *
- * @src: source
+ * @src: source, parameter1
  *
- * @dest: destination
+ * @dest: destination, parameer2
  *
- * @n: function param
+ * @n: function parameter
  *
  * return: dest
  *
@@ -16,11 +16,11 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 
 {
-	unsigned int i;
+        unsigned int i;
 
-	for (i = 0; i < n; i++)
-	{
-	dest[i] = src[i];
-	}
-	return (dest);
+        for (i = 0; i < n; i++)
+        {
+        dest[i] = src[i];
+        }
+        return (dest);
 }
