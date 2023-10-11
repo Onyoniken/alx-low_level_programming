@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int bytes, k;
+int bytes, i;
 	char *arr;
 
 	if (argc != 2)
@@ -25,19 +25,19 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(2);
-
 	}
 
 	arr = (char *)main;
 
-	for (k = 0; k < bytes; k++)
+	for (i = 0; i < bytes; i++)
 	{
-		if (k == bytes - 1)
+		if (i == bytes - 1)
 		{
-			printf("%02hhx\n", arr[k]);
-					break;
+			printf("%02hhx\n", arr[i]);
+			break;
 		}
-		printf("%02hhx", arr[k]);
+		printf("%02hhx ", arr[i]);
 	}
 	return (0);
+
 }
