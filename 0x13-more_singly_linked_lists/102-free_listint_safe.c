@@ -25,7 +25,7 @@ free(*h);
 *h = b;
 a++;
 }
- else
+else
 {
 free(*h);
 *h = NULL;
