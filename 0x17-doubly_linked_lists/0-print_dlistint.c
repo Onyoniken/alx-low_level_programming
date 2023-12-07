@@ -3,11 +3,12 @@
 /**
  * print_dlistint - main function
  * @h: param 1
- * REturn: no of nodes
+ * Return: no of nodes
  */
 size_t print_dlistint(const dlistint_t *h)
 {
 	int a;
+
 	a = 0;
 
 	if (h == NULL)
