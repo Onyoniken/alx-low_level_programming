@@ -3,7 +3,7 @@
 /**
  * dlistint_len - main function
  * @h: param 1
- * return: node numbers
+ * Return: node numbers
  */
 size_t dlistint_len(const dlistint_t *h)
 {
